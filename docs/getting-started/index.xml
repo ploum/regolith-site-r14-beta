@@ -22,12 +22,12 @@
       <description>
         
         
-        &lt;p&gt;Based on your preferred installation method, follow one of the following two sections to install Regolith:&lt;/p&gt;
+        &lt;p&gt;Based on your preferred installation method, follow one of the following two sections to install Regolith.  Unlike previous versions of Regolith, PPA and ISO installs result in different configurations.  The PPA install favors coexistence with the existing Ubuntu desktop, while the ISO release optimizes for less resource utilization.  Specifically, the ISO install is roughly 1Gb smaller and cold start RAM usage is reduced by about 200Mb as compared to the PPA installation.&lt;/p&gt;
 &lt;h2 id=&#34;option-1-ubuntu-installer&#34;&gt;Option 1: Ubuntu Installer&lt;/h2&gt;
 
 
 &lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
-&lt;p&gt;The ISO installer for Ubuntu 20.04 Focal Fossa will be released shortly after Ubuntu is released.&lt;/p&gt;
+&lt;p&gt;The ISO installer for Ubuntu 20.04 Focal Fossa will be released shortly after Canonical releases Focal.&lt;/p&gt;
 
 &lt;/div&gt;
 
