@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/regolith-site-r14-beta/docs/getting-started/basics/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-04-12T20:36:54-07:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-04-19T15:55:55-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Basics">
 <meta itemprop="description" content="Learn the most important parts of Regolith first.
 ">
-<meta itemprop="dateModified" content="2020-04-12T20:36:54-07:00" />
-<meta itemprop="wordCount" content="589">
+<meta itemprop="dateModified" content="2020-04-19T15:55:55-07:00" />
+<meta itemprop="wordCount" content="646">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -120,7 +120,7 @@ if (!doNotTrack) {
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r14-beta">1.4</a>
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r14-beta">1.4 Beta 1</a>
 	
 	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r131">1.3.1</a>
 	
@@ -646,10 +646,11 @@ if (!doNotTrack) {
 <nav id="TableOfContents">
   <ul>
     <li><a href="#the-super-key">The Super Key</a></li>
-    <li><a href="#launch-an-application">Launch an Application</a></li>
-    <li><a href="#navigate-to-a-window">Navigate to a Window</a></li>
-    <li><a href="#find-a-file">Find a File</a>
+    <li><a href="#launchers">Launchers</a>
       <ul>
+        <li><a href="#launch-an-application">Launch an Application</a></li>
+        <li><a href="#navigate-to-a-window">Navigate to a Window</a></li>
+        <li><a href="#find-and-launch-a-file">Find and Launch a File</a></li>
         <li><a href="#terminal">Terminal</a></li>
         <li><a href="#browser">Browser</a></li>
       </ul>
@@ -706,13 +707,15 @@ if (!doNotTrack) {
 	<p>While we'll cover everything in greater detail in other areas of the documentation, this page covers the very basics.</p>
 <h2 id="the-super-key">The Super Key</h2>
 <p>Most keybindings you'll be using with Regolith start with the <span class="badge badge-warning">super</span> key.  This key typically says &ldquo;WIN&rdquo; or has a MS Windows logo on it.  On a Mac it is the Command <span class="badge badge-warning">⌘</span> key.  Going forward, this key will simply be referred to as <span class="badge badge-warning">super</span> but keep in mind that you can change which physical button <span class="badge badge-warning">super</span> maps to in your configuration if you choose to.</p>
-<h2 id="launch-an-application">Launch an Application</h2>
+<h2 id="launchers">Launchers</h2>
+<p>Regolith provides several launchers are a primary way of interacting with your system.  Each of these launchers has a consistent look and feel but provides access to a specific entity.  Default launchers are provided for applications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span>, commands <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">shift</span> <span class="badge badge-warning">space</span></span>, notifications <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">n</span></span>, windows <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span>, and files <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span>.</p>
+<h3 id="launch-an-application">Launch an Application</h3>
 <p>After logging in, you'll be at a blank screen with the bar at the bottom and some keyboard shortcuts on the right.  To launch an application, press <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">space</span></span> and a menu will be presented with all of the applications installed on the system.  If you begin typing the name of the application you wish to launch, the list will filter down to only matching names.  You can also scroll through the list with the arrow keys.</p>
 <img class="shadow m-5" src="../screenshot-launcher.png" width="640px"/>
-<h2 id="navigate-to-a-window">Navigate to a Window</h2>
+<h3 id="navigate-to-a-window">Navigate to a Window</h3>
 <p>To focus on a running application, the <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">ctrl</span> <span class="badge badge-warning">space</span></span> keybinding can be used to show a dialog of all running windows.  Simply select the desired window and the system will move to the window's containing workspace and set it's focus.</p>
 <img class="shadow m-5" src="../regolith-screenshot-window-nav2.png" width="640px"/>
-<h2 id="find-a-file">Find a File</h2>
+<h3 id="find-and-launch-a-file">Find and Launch a File</h3>
 <p>Searching your local computer for a specific file can be achieved in a variety of ways.  Regolith provides a file search dialog via <span class="text-nowrap"><span class="badge badge-warning">super</span> <span class="badge badge-warning">alt</span> <span class="badge badge-warning">space</span></span> to quickly seek and optionally load a file with it's default application.  If the file path exceeds the width of the dialog, <span class="text-nowrap"><span class="badge badge-warning">alt</span> <span class="badge badge-warning">.</span></span> will toggle text justification.  Pressing enter on a selection will cause the file to be invoked with the <code>xdg-open</code> command.</p>
 <img class="shadow m-5" src="../regolith-file-search.png" width="640px"/>
 <h3 id="terminal">Terminal</h3>
@@ -792,7 +795,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 12, 2020: <a  href="https://github.com/regolith-linux/website/commit/5ea3ac38bae1d93baae8e8febf2f4f1ef2a85679">Complete first draft of configuration page.  Add margins to images. (5ea3ac3)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 19, 2020: <a  href="https://github.com/regolith-linux/website/commit/6b7142554f1131891d6d838b7790c297b1afa4ec">More R1.4 specific content. (6b71425)</a>
 </div>
 </div>
 

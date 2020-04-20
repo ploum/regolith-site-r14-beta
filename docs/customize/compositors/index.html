@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://regolith-linux.org/regolith-site-r14-beta/docs/customize/compositors/" />
 <meta property="og:image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
-<meta property="article:modified_time" content="2020-04-01T21:16:34-07:00" /><meta property="og:site_name" content="Regolith" />
+<meta property="article:modified_time" content="2020-04-19T15:55:55-07:00" /><meta property="og:site_name" content="Regolith" />
 <meta itemprop="name" content="Compositors">
 <meta itemprop="description" content="Configure visual effects in Regolith.
 ">
-<meta itemprop="dateModified" content="2020-04-01T21:16:34-07:00" />
-<meta itemprop="wordCount" content="272">
+<meta itemprop="dateModified" content="2020-04-19T15:55:55-07:00" />
+<meta itemprop="wordCount" content="309">
 <meta itemprop="image" content="https://regolith-linux.org/screenshot-remontoire.png"/>
 
 
@@ -120,7 +120,7 @@ if (!doNotTrack) {
 </a>
 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	
-	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r14-beta">1.4</a>
+	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r14-beta">1.4 Beta 1</a>
 	
 	<a class="dropdown-item" href="http://regolith-linux.org/regolith-site-r131">1.3.1</a>
 	
@@ -647,6 +647,11 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#finding-available-compositors">Finding Available Compositors</a></li>
     <li><a href="#installing-a-compositor">Installing a Compositor</a></li>
+    <li><a href="#overriding-a-compositor-configuration">Overriding a Compositor Configuration</a>
+      <ul>
+        <li><a href="#comptonpicom">Compton/Picom</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -742,7 +747,10 @@ if (!doNotTrack) {
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt install regolith-compositor-xcompmgr
 </code></pre></div><p>Log back in and the new compositor should be loaded.  You can verify by checking the process list for <code>xcompmgr</code>:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps aux <span style="color:#000;font-weight:bold">|</span> grep xcompmgr
-</code></pre></div>
+</code></pre></div><h2 id="overriding-a-compositor-configuration">Overriding a Compositor Configuration</h2>
+<h3 id="comptonpicom">Compton/Picom</h3>
+<p>To provide your own Compton/Picom compositor config, copy the default or create your own and save it as <code>~/.config/regolith/compton/config</code>.  Upon next session it will be loaded instead of the default config <code>/etc/regolith/compton/config</code>.</p>
+
 	
 		<style>
   .feedback--answer {
@@ -805,7 +813,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 1, 2020: <a  href="https://github.com/regolith-linux/website/commit/4f37469c6d32f8a719d466459d2ffc0f8e77c2c5">Many minor updates from gh issues collected over the past month. (4f37469)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 19, 2020: <a  href="https://github.com/regolith-linux/website/commit/6b7142554f1131891d6d838b7790c297b1afa4ec">More R1.4 specific content. (6b71425)</a>
 </div>
 </div>
 
