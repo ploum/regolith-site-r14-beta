@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Getting Started</title>
+    <title>Regolith - 1.4 Beta – Getting Started</title>
     <link>https://regolith-linux.org/regolith-site-r14-beta/docs/getting-started/</link>
-    <description>Recent content in Getting Started on Regolith</description>
+    <description>Recent content in Getting Started on Regolith - 1.4 Beta</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/regolith-site-r14-beta/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
@@ -55,6 +55,15 @@ $ sudo apt install regolith-desktop
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://regolith-linux.org/regolith-site-r14-beta/regolith-screenshot-login.png&#34; alt=&#34;Ubuntu Login Screen&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;upgrades&#34;&gt;Upgrades&lt;/h2&gt;
+&lt;h3 id=&#34;regolith-13---regolith-14&#34;&gt;Regolith 1.3 -&amp;gt; Regolith 1.4&lt;/h3&gt;
+&lt;p&gt;The Unstable PPA &lt;code&gt;ppa:regolith-linux/stable&lt;/code&gt; is currently hosting Regolith 1.4 Beta version packages.  To upgrade an existing system to the 1.4 Beta, update the package manager to source Regolith packages from the &lt;code&gt;stable&lt;/code&gt; PPA:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ apt policy &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; grep regolith
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Some info w/ URLs will be returned.  Assuming http://ppa.launchpad.net/regolith-linux/release/ubuntu is returned:&lt;/span&gt;
+$ sudo add-apt-repository --remove ppa:regolith-linux/release &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# remove release PPA&lt;/span&gt;
+$ sudo add-apt-repository ppa:regolith-linux/stable
+$ sudo apt dist-upgrade
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After performing the update, log back in to your system.  However, if you have staged your own i3 config file or Xresources root, read the below section &lt;code&gt;Upgrading with Customizations&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;regolith-10---12---regolith-14&#34;&gt;Regolith 1.0 - 1.2 -&amp;gt; Regolith 1.4&lt;/h3&gt;
 &lt;p&gt;To upgrade from Regolith 1.0 - 1.2, the PPA URL must be changed and then new package versions are applied by the package manager:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo add-apt-repository --remove ppa:kgilmer/regolith-stable
 $ sudo add-apt-repository ppa:regolith-linux/release
@@ -67,7 +76,7 @@ $ cp ~/.Xresources-regolith ~/regolith-backup
 $ cp -r ~/.config/regolith/i3* ~/regolith-backup
 $ rm -Rf ~/.config/regolith/flags
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once these steps are performed, logging back in should result in a &amp;ldquo;stock&amp;rdquo; instance of Regolith.  From there, any changes desired to be reintegrated can be done by editing the new versions of the Regolith config files that exist in the &lt;code&gt;/etc/regolith&lt;/code&gt; directory.&lt;/p&gt;
-&lt;h3 id=&#34;edits-to-root-owned-files&#34;&gt;Edits to &lt;code&gt;root&lt;/code&gt;-owned files&lt;/h3&gt;
+&lt;h3 id=&#34;edits-to-etcregolith-files&#34;&gt;Edits to &lt;code&gt;/etc/regolith/...&lt;/code&gt; files&lt;/h3&gt;
 &lt;p&gt;If you&#39;ve taken shortcuts and manually edited files owned by &lt;code&gt;root&lt;/code&gt; in &lt;code&gt;/etc/regolith&lt;/code&gt; or elsewhere, the packaging tool may not update the files, nor mention that stale files have been left.  Even removing the package via &lt;code&gt;apt remove ...&lt;/code&gt; may not result in a clean system.  In this case, use the purge command to remove the package and manually delete any left over files.  For example, to clean up the i3 config file:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ sudo apt purge regolith-i3-gaps-config
 $ sudo rm -Rf /etc/regolith/i3 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# be sure to backup any important changes&lt;/span&gt;

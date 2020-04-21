@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regolith – Reference</title>
+    <title>Regolith - 1.4 Beta – Reference</title>
     <link>https://regolith-linux.org/regolith-site-r14-beta/docs/reference/</link>
-    <description>Recent content in Reference on Regolith</description>
+    <description>Recent content in Reference on Regolith - 1.4 Beta</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://regolith-linux.org/regolith-site-r14-beta/docs/reference/index.xml" rel="self" type="application/rss+xml" />
@@ -380,7 +380,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;St.color0 - St.color15&lt;/td&gt;
-&lt;td&gt;Color definitions for st-term&lt;/td&gt;
+&lt;td&gt;Color definitions for terminal&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;St.font&lt;/td&gt;
@@ -423,12 +423,20 @@
 &lt;td&gt;GTK Icon Theme&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;gnome.terminal.font&lt;/td&gt;
+&lt;td&gt;Font definition for gnome-terminal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gnome.terminal.scrollbar&lt;/td&gt;
+&lt;td&gt;Flag to enable/disable scrollbar (&lt;code&gt;never | always&lt;/code&gt;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;gnome.wallpaper&lt;/td&gt;
 &lt;td&gt;GNOME Wallpaper (can be overridden in Settings)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;gnome.wm.theme&lt;/td&gt;
-&lt;td&gt;GNOME Window Manager Theme&lt;/td&gt;
+&lt;td&gt;GNOME Window Manager Theme (unused)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3-wm.bar.background.color&lt;/td&gt;
@@ -449,6 +457,10 @@
 &lt;tr&gt;
 &lt;td&gt;i3-wm.bar.statusline.color&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3-wm.bar.trayoutput&lt;/td&gt;
+&lt;td&gt;Enable or disable the &lt;a href=&#34;https://i3wm.org/docs/userguide.html#_tray_output&#34;&gt;app tray&lt;/a&gt; in i3bar&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3-wm.bar.workspace.active.background.color&lt;/td&gt;
@@ -603,10 +615,6 @@
 &lt;td&gt;Workspace Labels&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;i3xrocks.critical.color&lt;/td&gt;
-&lt;td&gt;Color for bar module in critical mode&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
 &lt;td&gt;i3xrocks.error.color&lt;/td&gt;
 &lt;td&gt;Color for bar module in error mode&lt;/td&gt;
 &lt;/tr&gt;
@@ -652,6 +660,10 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;i3xrocks.label.cpu&lt;/td&gt;
+&lt;td&gt;Bar icon glyph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;i3xrocks.label.disk&lt;/td&gt;
 &lt;td&gt;Bar icon glyph&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
